@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link rel="shortcut icon" href="https://static.vecteezy.com/system/resources/previews/031/448/024/non_2x/programming-language-icon-vector.jpg">
+    <link rel="stylesheet" href="Integrador.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <h1 class="title">Facundo Ahumada</h1>
+                <h2 class="subtitle">Programador</h2>
+                <div class="menu">
+                    <ul>
+                        <li><a href="./Home.html">Home</a></li>
+                        <li><a href="./Proyectos.html">Proyectos</a></li>
+                        <li><a href="./Contacto.html">Contacto</a></li>
+                        <li><a href="./Comentarios.html">Comentarios</a></li>
+                    </ul>     
+                </div>
+            </nav>
+        </header>
+        <br><br><br><br>
+        <main>
+            <section id="comentarios" class="comentarios">
+                <form id="formulario">
+                    <h2 class="comentarios__title">Formulario para comentar</h2>
+                    <h3 class="comentarios__texto">Ingrese nombre: </h3>
+                    <input id="nombre" type="text">
+                    <h3 class="comentarios__texto">Ingrese correo electronico: </h3>
+                    <input id="email" required type="email" name="email">
+                    <h3 class="comentarios__texto">Ingrese comentario: </h3>
+                    <input id="comentario" type="text">
+                    <div id="mensaje" class="mensaje"></div>
+                    <br><br>
+                    <button id="boton" type="submit">Enviar</button>
+                </form>
+            </section>
+        </main>
+        <br><br><br><br>
+        <footer class="footer">
+            <p>&copy; 2024 <strong>Portafolio</strong> proyecto privado todos los derechos reservados.</p>
+        </footer>
+        <script src="Integrador.js"></script>
+    </div>
+</body>
+</html>
