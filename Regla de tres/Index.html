@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <header>
+        <h1>Operaciones matemáticas: Regla de 3</h1>
+        <h2>Calculadora digital</h2>
+    </header>
+
+    <section class="content">
+        <p>La regla de 3 es una herramienta matemática utilizada para resolver proporciones entre tres valores conocidos. En esta calculadora digital, el valor <strong>a</strong> es el número que dividirá a los valores <strong>b</strong> y <strong>c</strong>.</p>
+        <p>La fórmula básica de la regla de 3 es:</p>
+        <pre>
+            x = b * c / a
+        </pre>
+        <img src="https://www.smartick.es/blog/wp-content/uploads/formula-regla-de-3-img1.png" width="400" height="200" alt="Regla de 3">
+        <p>Donde:</p>
+        <ul>
+            <li><strong>a</strong> es el divisor de los valores <strong>b</strong> y <strong>c</strong>.</li>
+            <li><strong>b</strong> y <strong>c</strong> son los valores que se <strong>multiplican</strong> entre ellos.</li>
+            <li><strong>x</strong> es el valor resultado que obtienes al calcular los otros tres valores.</li>
+        </ul>
+    </section>
+    <br> <div class="valores">
+        <label for="a"><strong>Valor de a: </strong></label>
+        <input id="a" type="number" >
+        <br><br>
+        <label for="b"><strong>Valor de b: </strong></label>
+        <input id="b" type="number" >
+        <br><br>
+        <label for="c"><strong>Valor de c: </strong></label>
+        <input id="c" type="number">
+        <br><br>
+        <button onclick="CalcularReglaTres()">Resolver</button>
+    </div>
+    <br><br>
+    <div class="resultado">
+        <label for="x"><strong>Resultado: </strong></label>
+        <input id="x" readonly>
+    </div>
+
+
+    <script src="Index.js"></script>
+</body>
+</html>

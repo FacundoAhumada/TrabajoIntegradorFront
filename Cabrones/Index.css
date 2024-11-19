@@ -1,0 +1,50 @@
+body {
+    background-color: black;
+}
+.main__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main__title {
+    font-size: 2cm;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: gold;
+}
+.main__info {
+    font-size: 1cm;
+    color: white;
+}
+.main__lomos {
+    font-size: 1cm;
+    text-decoration: underline;
+    color: white;
+}
+.main__burgers {
+    font-size: 1cm;
+    text-decoration: underline;
+    color: white;
+}
+.main__papas {
+    font-size: 1cm;
+    text-decoration: underline;
+    color: white;
+}
+.main__textlomos {
+    font-size: 0.5cm;
+    color: white;
+}
+.main__textburgers {
+    font-size: 0.5cm;
+    color: white;
+}
+.main__textpapas {
+    font-size: 0.5cm;
+    color: white;
+}
+.main__footer {
+    font-size: 0.5cm;
+    color: white;
+}

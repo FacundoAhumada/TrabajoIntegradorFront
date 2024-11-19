@@ -1,0 +1,66 @@
+* {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+.header__image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(58, 0, 0);
+    width: 100vw;
+    height: 40vh;
+    background-image: url(https://www.wallpaperuse.com/wallp/1-19249_m.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header__title{
+    font-size: 1.5cm;
+    color: hsl(34, 91%, 36%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: underline;
+}
+.header__menu{
+    color: firebrick;
+    background-color: goldenrod;
+    font-size: 1cm;
+    text-align: justify;
+}
+.main__loretitle{
+    color: #FF0000;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+.main__loretext{
+    color: ivory;
+    text-align: justify;
+    color: rgb(170, 170, 110);
+    font-size: 20px;
+}
+.main__especietitle{
+    color: #800080;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+.main__especietext{
+    color: ivory;
+    text-align: justify;
+    color: rgb(170, 170, 110);
+    font-size: 1.2em;
+}
+.main__principestitle{
+    color: #FF00FF;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+.main__principestext{
+    color: rgb(170, 170, 110);
+    text-align: justify;
+    font-size: 98%;
+}
+.main__footer{
+    font-size: 0.5cm;
+    color: white;
+}

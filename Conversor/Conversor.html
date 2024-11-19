@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversion APP</title>
+    <link rel="stylesheet" href="Indexalone.css">
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de unidades</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Conversor de unidades</h1>
+        <h2>Calculadora digital</h2>
+    </header>
+
+    <section class="content">
+        <p>Este conversor de unidades te permite realizar conversiones entre diferentes sistemas de medida. A continuación te mostramos las opciones disponibles:</p>
+        
+        <h3>Opción 1: Temperatura</h3>
+        <p>Para convertir entre diferentes escalas de temperatura, puedes elegir entre las siguientes unidades:</p>
+        <ul>
+            <li><strong>Celsius</strong></li>
+            <li><strong>Kelvin</strong></li>
+            <li><strong>Fahrenheit</strong></li>
+        </ul>
+
+        <h3>Opción 2: Peso</h3>
+        <p>Para convertir entre diferentes unidades de peso, las opciones disponibles son:</p>
+        <ul>
+            <li><strong>Gramos</strong></li>
+            <li><strong>Kilogramos</strong></li>
+            <li><strong>Libras</strong></li>
+        </ul>
+
+        <h3>Opción 3: Longitud</h3>
+        <p>Para convertir entre distintas unidades de longitud, las opciones incluyen:</p>
+        <ul>
+            <li><strong>Metros</strong></li>
+            <li><strong>Kilómetros</strong></li>
+            <li><strong>Millas</strong></li>
+            <li><strong>Pies</strong></li>
+        </ul>
+        
+        <div class="formulario">
+            <label for="tipo_conversion">Elija tipo de conversión:</label>
+            <select id="tipo_conversion" onchange="TiposUnidades()">
+                <option value="">Seleccione...</option>
+                <option value="peso">Peso</option>
+                <option value="longitud">Longitud</option>
+                <option value="temperatura">Temperatura</option>
+            </select>
+            
+            <label for="unit_in">Unidad de entrada:</label>
+            <select id="unit_in">
+                <option value="">Seleccione...</option>
+            </select>
+            
+            <label for="unit_out">Unidad de salida:</label>
+            <select id="unit_out">
+                <option value="">Seleccione...</option>
+            </select>
+
+            <label for="valor_entrada">Valor:</label>
+            <input type="number" id="valor_entrada" placeholder="Introduce el valor" />
+
+            <button class="boton" id="boton" onclick="ConversionUnidades()">
+                Enviar
+            </button>
+
+            <br><br>
+            <label for="resultado">Resultado:</label>
+            <input id="resultado" readonly>
+        </div>
+    </section>
+
+    <script src="Indexalone.js"></script>
+</body>
+</html>
+
+    <script src="Indexalone.js"></script>
+</body>
+</html

@@ -10,38 +10,73 @@
 </head>
 <body>
     <div class="container">
-        <header>
+        <header class="header">
             <nav>
                 <h1 class="title">Facundo Ahumada</h1>
                 <h2 class="subtitle">Programador</h2>
-                <div class="menu">
-                    <ul>
-                        <li><a href="./Home.html">Home</a></li>
-                        <li><a href="./Proyectos.html">Proyectos</a></li>
-                        <li><a href="./Contacto.html">Contacto</a></li>
-                        <li><a href="./Comentarios.html">Comentarios</a></li>
-                    </ul>     
-                </div>
+                <div>
+                  <ul class="menu">
+                      <li><a href="./Home.html">Home</a></li>
+                      <li><a href="./Proyectos.html">Proyectos</a></li>
+                      <li><a href="./Contacto.html">Contacto</a></li>
+                      <li><a href="./Comentarios.html">Comentarios</a></li>
+                  </ul>     
+              </div>
             </nav>
         </header>
-        <br><br><br><br>
         <main>
-            <section id="comentarios" class="comentarios">
-                <form id="formulario">
-                    <h2 class="comentarios__title">Formulario para comentar</h2>
-                    <h3 class="comentarios__texto">Ingrese nombre: </h3>
-                    <input id="nombre" type="text">
-                    <h3 class="comentarios__texto">Ingrese correo electronico: </h3>
-                    <input id="email" required type="email" name="email">
-                    <h3 class="comentarios__texto">Ingrese comentario: </h3>
-                    <input id="comentario" type="text">
-                    <div id="mensaje" class="mensaje"></div>
-                    <br><br>
-                    <button id="boton" type="submit">Enviar</button>
-                </form>
+            <section class="comentarios">
+                <form>
+                    <form class="row g-3 needs-validation" novalidate>
+                        <div>
+                          <label for="validationCustom01" id="nombre" class="form-label">Nombre</label>
+                          <input type="text" class="form-control" id="validationCustom01" value="" required>
+                          <div class="valid-feedback">
+                            Correcto!
+                          </div>
+                        </div>
+                        <div>
+                          <label for="validationCustom02" id="apellido" class="form-label">Apellido</label>
+                          <input type="text" class="form-control" id="validationCustom02" value="" required>
+                          <div class="valid-feedback">
+                            Correcto!
+                          </div>
+                        </div>
+                        <div>
+                          <label for="validationCustomUsername" class="form-label">Correo electronico</label>
+                          <div class="input-group has-validation">
+                            <span class="input-group-text" id="inputGroupPrepend">@</span>
+                            <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                            <div class="invalid-feedback">
+                              Coloque bien su correo electronico.
+                            </div>
+                          </div>
+                        </div>
+                        <br>
+                        <div class="form-floating">
+                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                            <label for="floatingTextarea2">Comentario..</label>
+                        </div>
+                        <br>
+                        <div class="col-12">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                            <label class="form-check-label" for="invalidCheck">
+                              Estoy de acuerdo con enviar este comentario.
+                            </label>
+                            <div class="invalid-feedback">
+                              Debes aceptar el estar de acuerdo con enviar el comentario.
+                            </div>
+                          </div>
+                        </div>
+                        <br>
+                        <div class="col-12">
+                          <button class="btn btn-primary" type="submit">Enviar</button>
+                        </div>
+                      </form>
             </section>
         </main>
-        <br><br><br><br>
+        
         <footer class="footer">
             <p>&copy; 2024 <strong>Portafolio</strong> proyecto privado todos los derechos reservados.</p>
         </footer>

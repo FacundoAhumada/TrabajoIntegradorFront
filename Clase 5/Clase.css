@@ -1,0 +1,47 @@
+body{
+    margin: 0;
+    padding: 0;
+    flex: 1;
+    display: flex;
+    min-height: 100vh;
+}
+p{
+    font-size: 1cm;
+}
+.wrapper{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.header{
+    margin: 0;
+    padding: 0;
+    position: sticky;
+    top: 0;
+}
+.header__container{
+    background-color: tomato;
+    margin: 0;
+    padding: 0;
+    height: 10vh;
+    width: 100vw;
+   
+}
+.header__container__title{
+    margin: 0;
+}
+.main{
+    flex: 1;
+}
+.main__container{
+    background-color: aquamarine;
+    height: 25vh;
+    width: 25vw;
+    position: fixed;
+    left: 50%;
+    bottom: 50%;
+    translate: -50% 50%;
+}
+.main__container__title{
+
+}

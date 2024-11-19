@@ -1,32 +1,26 @@
-document.getElementById('formulario').addEventListener('submit', function(event) {
-    const emailInput = document.getElementById('email');
-    const mensajeDiv = document.getElementById('mensaje');
+document.addEventListener('DOMContentLoaded', function () {
+    const emailInput = document.getElementById('validationCustomUsername');
 
-    mensajeDiv.textContent = '';
-
-    if (!emailInput.value.includes('@')) {
-        event.preventDefault(); 
-        mensajeDiv.textContent = 'Se necesita el símbolo @ en el correo electrónico.';
-    } else {
-        
-        mensajeDiv.textContent = 'El formulario se ha cumplido correctamente.';
-    }
+    emailInput.addEventListener('input', function () {
+        if (emailInput.value.includes("@") === false && emailInput.value !== "") {
+            alert("Necesita poner @");
+        }
+    });
 });
 
-let botonEnviar = document.getElementById('boton');
+document.addEventListener('DOMContentLoaded', function () {
 
-botonEnviar.onclick = function() {
-    alert('El formulario fue enviado.');
-}
+    const form = document.querySelector('form');
+    const comentario = document.querySelector('#floatingTextarea2');
 
-botonEnviar.onmouseover = function() {
-    
-}
+    form.addEventListener('submit', function (event) {
+        if (comentario.value.trim() === '') {
+        event.preventDefault();
+        alert("Debe rellenar el casillero con su comentario u opinion.");
+        }
 
-botonEnviar.onmouseover = function () {
-    botonEnviar.classList.add("highlight");
- };
+        alert("El formulario ha sido enviado correctamente");
 
- botonEnviar.onmouseout = function () {
-    botonEnviar.classList.remove("highlight");
- }; 
+        form.reset();
+    });
+});

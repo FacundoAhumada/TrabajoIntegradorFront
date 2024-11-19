@@ -1,0 +1,20 @@
+.main {
+    background-color: blue;
+}
+.main__title {
+    color: blueviolet;
+}
+.main__subtitle {
+    color: red;
+}
+.main__text {
+    color: green;
+}
+
+.main__text--primary{
+    font-size: 1cm;
+}
+
+.main__text--secondary{
+    color: aqua;
+}
