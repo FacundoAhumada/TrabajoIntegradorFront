@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,80 +9,109 @@
     <link rel="shortcut icon" href="https://static.vecteezy.com/system/resources/previews/031/448/024/non_2x/programming-language-icon-vector.jpg">
     <link rel="stylesheet" href="Integrador.css">
 </head>
+
 <body>
     <div class="container">
-        <header class="header">
-            <nav>
+        <!-- Barra de navegación -->
+        <nav>
+            <div class="barra_nav">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./Home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./Acerca de mi.html">Acerca de mi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./Proyectos.html">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./Contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./Comentarios.html">Comentarios</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Encabezado -->
+        <header>
+            <div class="contenido">
                 <h1 class="title">Facundo Ahumada</h1>
                 <h2 class="subtitle">Programador</h2>
-                <div>
-                  <ul class="menu">
-                      <li><a href="./Home.html">Home</a></li>
-                      <li><a href="./Proyectos.html">Proyectos</a></li>
-                      <li><a href="./Contacto.html">Contacto</a></li>
-                      <li><a href="./Comentarios.html">Comentarios</a></li>
-                  </ul>     
-              </div>
-            </nav>
+            </div>
         </header>
+
+        <!-- Sección de comentarios -->
         <main>
             <section class="comentarios">
-                <form>
-                    <form class="row g-3 needs-validation" novalidate>
-                        <div>
-                          <label for="validationCustom01" id="nombre" class="form-label">Nombre</label>
-                          <input type="text" class="form-control" id="validationCustom01" value="" required>
-                          <div class="valid-feedback">
+                <form class="row g-3 needs-validation" novalidate>
+                    <div class="col-md-6">
+                        <label for="validationCustom01" id="nombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="validationCustom01" required>
+                        <div class="valid-feedback">
                             Correcto!
-                          </div>
                         </div>
-                        <div>
-                          <label for="validationCustom02" id="apellido" class="form-label">Apellido</label>
-                          <input type="text" class="form-control" id="validationCustom02" value="" required>
-                          <div class="valid-feedback">
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="validationCustom02" id="apellido" class="form-label">Apellido</label>
+                        <input type="text" class="form-control" id="validationCustom02" required>
+                        <div class="valid-feedback">
                             Correcto!
-                          </div>
                         </div>
-                        <div>
-                          <label for="validationCustomUsername" class="form-label">Correo electronico</label>
-                          <div class="input-group has-validation">
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="validationCustomUsername" class="form-label">Correo electrónico</label>
+                        <div class="input-group has-validation">
                             <span class="input-group-text" id="inputGroupPrepend">@</span>
                             <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
                             <div class="invalid-feedback">
-                              Coloque bien su correo electronico.
+                                Coloque bien su correo electrónico.
                             </div>
-                          </div>
                         </div>
-                        <br>
-                        <div class="form-floating">
-                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
-                            <label for="floatingTextarea2">Comentario..</label>
-                        </div>
-                        <br>
-                        <div class="col-12">
-                          <div class="form-check">
+                    </div>
+
+                    <br>
+
+                    <div class="form-floating">
+                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                        <label for="floatingTextarea2">Comentario..</label>
+                    </div>
+
+                    <br>
+
+                    <div class="col-12">
+                        <div class="form-check">
                             <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
                             <label class="form-check-label" for="invalidCheck">
-                              Estoy de acuerdo con enviar este comentario.
+                                Estoy de acuerdo con enviar este comentario.
                             </label>
                             <div class="invalid-feedback">
-                              Debes aceptar el estar de acuerdo con enviar el comentario.
+                                Debes aceptar el estar de acuerdo con enviar el comentario.
                             </div>
-                          </div>
                         </div>
-                        <br>
-                        <div class="col-12">
-                          <button class="btn btn-primary" type="submit">Enviar</button>
-                        </div>
-                      </form>
+                    </div>
+
+                    <br>
+
+                    <div class="col-12">
+                        <button class="btn btn-primary" type="submit">Enviar</button>
+                    </div>
+                </form>
             </section>
         </main>
-        
+
+        <!-- Pie de página -->
         <footer class="footer">
             <p>&copy; 2024 <strong>Portafolio</strong> proyecto privado todos los derechos reservados.</p>
         </footer>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-        <script src="Integrador.js"></script>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="Integrador.js"></script>
 </body>
+
 </html>
